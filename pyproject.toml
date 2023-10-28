@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "check-comma-in-class-attributes"
+version = "0.1.0"
+description = "Checks if has a comma in any class attribute."
+authors = ["Marcos Martins <contato@marcosmartins.me>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/marcosdotme/check-comma-in-class-attributes"
+repository = "https://github.com/marcosdotme/check-comma-in-class-attributes"
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Intended Audience :: Developers"
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.3"
+
+[tool.pytest.ini_options]
+addopts = "--verbose --exitfirst --showlocals --doctest-modules --color=yes"
+
+[tool.poetry.scripts]
+check-comma-in-class-attributes = 'check_comma_in_class_attributes:run'
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
