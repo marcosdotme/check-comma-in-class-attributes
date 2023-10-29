@@ -33,6 +33,10 @@ Hi, my name is Marcos and I'm 25 years old!
 
 <br>
 
+> It's important to emphasize that is not necessarily a syntax error, and it's not even identified by linters by default, but it will produce unexpected behavior when retrieving the value of the `self.name` attribute.
+
+<br>
+
 ## Usage
 
 It's  only possible to use this hook with `pre-commit`, so put this inside your `.pre-commit-config.yaml`:
